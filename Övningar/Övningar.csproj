@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200322004819_CreateDatabase.cs" />
+    <Compile Remove="Migrations\20200322004819_CreateDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20200322004959_CreateDatabase.cs" />
+    <Compile Remove="Migrations\20200322004959_CreateDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20200322005122_f.cs" />
+    <Compile Remove="Migrations\20200322005122_f.Designer.cs" />
+    <Compile Remove="Migrations\20200322005157_g.cs" />
+    <Compile Remove="Migrations\20200322005157_g.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
